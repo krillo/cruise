@@ -1,0 +1,221 @@
+/*
+Theme Name:     CruiseHelsingborg
+Theme URI:      http://smartasystem.se
+Description:    Child theme for the Twenty Twelve theme
+Author:         Smarta System Norden AB
+Author URI:     http://smartasystem.se
+Template:       twentytwelve                             
+Version:        1.0
+*/
+
+@import url("../twentytwelve/style.css");
+
+/*-- move sidebar to the left --*/
+@media screen and (min-width: 600px) {
+  .site-content {
+    float: right;
+  }
+  .widget-area {
+    float: left;
+  }
+}
+/* for IE8 and IE7 ----------------*/
+.ie .site-content {
+  float: right;
+}
+.ie .widget-area {
+  float: left;
+}
+
+/*
+#page {
+  border-radius: 8px;
+};
+*/
+
+/* My custom widget (orange text color for active link) */
+/*
+aside#smart_nav_widget-2 li.current-cat a {
+  color: rgb(249,157,51);
+}
+*/
+aside#smart_nav_widget-2 dd.current-cat a {
+  color: rgb(249,157,51);
+}
+aside#smart_nav_widget-2 dt.current-cat a {
+  color: rgb(249,157,51);
+}
+
+/* Footer */
+.site-info {
+  color: white;
+  background-color: rgb(249,157,51);
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  text-align:center;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+/* No margin around colophon */
+#colophon {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* less space below article */
+.site-content article {
+  margin-bottom: 0; /* was 72px?*/
+  padding-bottom: 0; /* was 24px? */
+}
+
+/* Smaller right margin (30px instead of 40px) */
+/* Minimum width of 600 pixels. */
+@media screen and (min-width: 600px) {
+  .main-navigation li {
+    margin: 0 30px 0 0;
+    margin: 0 2.1428571429rem 0 0;
+  }
+
+
+}
+/* Smaller right margin (28px instead of 40px) on IE7 and IE8*/
+.ie .main-navigation li {
+  margin: 0 28px 0 0;
+  margin: 0 2.1428571429rem 0 0;
+}
+
+
+/* No site header */
+.site-header hgroup {
+  display:none;
+}
+
+/* No entry-header on start page */
+body.page-id-44 header.entry-header {
+  display:none;	
+}
+body.page-id-44 div#primary {
+  margin-top: 0;
+}
+
+/* Orange h1 */
+article strong {
+  color: rgb(249,157,51);
+}
+
+/* Orange links in posts */
+article a {
+  color: rgb(249,157,51);
+}
+
+/* Set column 1 width of table on Port info/General page*/
+table#port-info-general-table td:first-child {
+  width: 200px;
+}
+
+#smart_nav_widget-2 dd {
+  margin-left:20px;
+}
+
+#smart_nav_widget-2 dd, #smart_nav_widget-2 dt {
+  margin-top:5px;
+  margin-bottom:5px;
+}
+
+#smart_nav_widget-2 dt { text-indent:10px; background-image:url('images/plus.png'); background-repeat:no-repeat; background-position:0px 2px; }
+#smart_nav_widget-2 dt.expanded { background-image:url('images/minus.png'); }
+#smart_nav_widget-2 dt.notExpandable { background-image:none; }
+
+/* black links in Don't miss box on start page right side bar */
+#dontmissbox a {
+  color: black;
+}
+
+#dontmissbox ul
+{
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+#dontmissbox ul li
+{
+  padding: 0px;
+  margin: 0px;
+}
+
+.gallerylayer1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height:auto;
+  background:white;
+}
+
+.gallerylayer2 {
+  position: static;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  background: white;
+}
+
+
+/*************************
+  This is the new home page
+  2013-10-21
+  kristian@reptilo.se
+***************************/
+.clearfix{clear:both;}
+#flexslider-container{margin:50px 0 0 0;}
+#rep-header{color:#fff;width:100%;min-height:80px;background-image:url('images/orange_bg.png');background-repeat: repeat-x;}
+#rep-search-area{width:100%;min-height:80px;}
+#rep-search-area #searchform{width:235px;float:left;padding:20px 0 0 35px;}
+#rep-payoff{width:42%;float:left;padding:20px 0 0 0;font-size: 16px;}
+#rep-logo{float:right;margin-right: 5%;width: 117px;}
+#home-page-navigation{margin-top: 0;min-height:35px;width:82%;}
+#home-page-navigation div ul li a{color:#eee;font-size: 15px;line-height: 3em;}
+#home-page-navigation div ul li {margin-right: 1.2em;}
+#home-page-navigation div ul{padding-left: 35px;width:95%;border:none;}
+#rep-welcome p{width: 94%;padding: 2% 3%;font-size: 17px;color:#706e6d;line-height: 21px;}
+.puff{float:left;width:235px; height:235px;margin: 0 6px 30px 0;background-color: #403d3c;overflow:hidden;}
+.puff a{color: #f6f5f5;}
+.last-puff{margin-right: 0;}
+#puff1{cursor: pointer;}
+#puff1 img{width:235px; height:235px;}
+#puff1-t1{font-size: 20px;position:relative;top:-80px;color:#f6f5f5;text-align:center;}
+#puff1-t2{font-size: 15px;position:relative;top:-85px;color:#f6f5f5;text-align:center;}
+#puff2{background-color: #403d3c;font-size: 30px;color:#f6f5f5;text-align:center;}
+#puff2 div{position:relative; top:55px;}
+#puff3{}
+#puff4{background-color: #403d3c;font-size: 25px;color:#f6f5f5;}
+#puff4 div{margin: 22px 25px;}
+#puff4 div a{width:175px; float:left;margin-bottom: 20px;}
+.rep-footer{float:left;height:90px;margin-left: 35px;margin-bottom:30px;}
+.rep-footer a{color:#403d3c;font-weight: bold;font-size: 15px;}
+#rep-partners div{float:left;margin-right: 10px;}
+#rep-partners img{float:left;position:relative;top:-20px;}
+#rep-signup div{margin-bottom:7px;color:#403d3c;font-weight: bold;font-size: 15px;}
+#rep-contact{margin-right:55px;}
+#rep-copyright{margin:0;}
+
+/*** slider ****/
+#flexslider-container{text-align: center; }
+.flexslider{display: block;}
+#alternative{display: none;}
+.flexslider{max-width: 960px;border:none;margin:0;}
+.flexslider img{max-width: 960px;}
+#rep_video{display:none;}
+.slides-video{display:none;}
+
+/***** guestbook ****/
+.rep-full-width{width: 100%;}
+.rep-full-width article{border-bottom: none;}
+.rep-guestbook-puff{float:left;width:170px;margin:10px 20px 30px 0;}
+.rep-guestbook-puff img{border-radius: 3px;box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);border: 2px solid #CFCFCF;padding: 5%;}
+.rep-guestbook-puff div{font-style: italic;font-size: 12px;line-height: 2;color: #757575;text-align: center;}
+
+/***** cruise calls *****/
+.entry-content{margin-top: 50px;}
+
