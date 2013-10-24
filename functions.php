@@ -211,7 +211,7 @@ function cruise_list_cruisecalls() {
       $month = date("F", strtotime($datum));
       $year = date("Y", strtotime($datum));
       $weekday = date("l", strtotime($datum));
-      $title = $post->post_title;
+      $ship = get_field('ship');
       $extern_lank = get_field('extern_lank');
       $cruise_line = get_field('cruise_line');
       $hamn = get_field('hamn');
@@ -234,7 +234,7 @@ function cruise_list_cruisecalls() {
           <td>{$day}</td>
           <td>{$klockslag}</td>
           <td>{$weekday}</td>
-          <td>{$title}</td>
+          <td>{$ship}</td>
           <td><p align="left"><a href="{$extern_lank}">{$cruise_line}</a></p></td>
           <td>{$hamn}</td>
         </tr>

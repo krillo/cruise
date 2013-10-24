@@ -170,7 +170,7 @@ table#port-info-general-table td:first-child {
 .clearfix{clear:both;}
 #flexslider-container{margin:50px 0 0 0;}
 #rep-header{color:#fff;width:100%;min-height:80px;background-image:url('images/orange_bg.png');background-repeat: repeat-x;}
-#rep-search-area{width:100%;min-height:80px;}
+#rep-search-area{width:100%;min-height:69px;}
 #rep-search-area #searchform{width:235px;float:left;padding:20px 0 0 35px;}
 #rep-payoff{width:42%;float:left;padding:20px 0 0 0;font-size: 16px;}
 #rep-logo{float:right;margin-right: 5%;width: 117px;}
